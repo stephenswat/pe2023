@@ -82,9 +82,9 @@ multiplication. First, establish the performance boundaries imposed by the
 hardware, both analytically (from hardware specifications) and empirically, and
 report on the accuracy of your analytical rooflines. Then determine, by hand,
 the arithmetic intensity of the application and establish the upper bound on
-the performance of the application. Find the true arithmetic intensity as well
-as the true performance of the application for at least five matrices and
-compare them to your model. Report on the validity of your model.
+the performance of the application. Find the true performance of the
+application for at least five matrices and compare them to your model. Report
+on the validity of your model.
 
 == Part 2 -- Sequential Optimisation (4 points)
 
