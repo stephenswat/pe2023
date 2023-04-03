@@ -1,3 +1,5 @@
+#let commit = read("commit.txt").trim("\n")
+
 #let decoration(position, color) = {
   let border = 2mm + color
   let strokes = (
@@ -45,7 +47,7 @@
   })
 }
 
-#titleslide("PE2023 Laptopcollege Introduction", "Stephen Nicholas Swatman", "April 3rd, 2023")
+#titleslide("PE2023 Laptopcollege Introduction", "Stephen Nicholas Swatman", {raw(commit); text(", April 3rd, 2023")})
 
 #slide[
   = Introduction
@@ -99,8 +101,7 @@
   - Your assignment grade is calculated as $(9p) / 40 + 1$ where $p$ is the sum
     of the points you gather across all assignments
   - Each assignment is worth a little over 10 points, to allow you to build up
-    a little buffer
-    - Your assignment grade cannot exceed 10
+    a little bonus
 ]
 
 #slide[

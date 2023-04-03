@@ -1,3 +1,5 @@
+#let commit = read("commit.txt").trim("\n")
+
 #show link: underline
 
 #set text(
@@ -29,11 +31,14 @@
   columns: (50%, 50%),
   rows: (60pt, auto),
   image("UvALogo.svg", width: 90%),
-  align(right, [
-    #link("mailto:s.n.swatman@uva.nl")[Stephen Nicholas Swatman]\
-    #link("mailto:a.l.varbanescu@utwente.nl")[Ana-Lucia Varbanescu]\
-    #link("mailto:a.pathania@uva.nl")[Anuj Pathania]\
-    Updated April 1st, 2023]
+  align(right, {
+    link("mailto:s.n.swatman@uva.nl")[Stephen Nicholas Swatman]
+    linebreak()
+    link("mailto:a.l.varbanescu@utwente.nl")[Ana-Lucia Varbanescu]
+    linebreak()
+    link("mailto:a.pathania@uva.nl")[Anuj Pathania]
+    linebreak()
+    text[#raw(commit), April 3rd, 2023]}
   )
 )
 
@@ -80,25 +85,30 @@ your ability to interpret them, and the thoroughness of your validation.
 Build a roofline model for the reference implementation of matrix
 multiplication. First, establish the performance boundaries imposed by the
 hardware, both analytically (from hardware specifications) and empirically, and
-report on the accuracy of your analytical rooflines. Then determine, by hand,
-the arithmetic intensity of the application and establish the upper bound on
-the performance of the application. Find the true performance of the
-application for at least five matrices and compare them to your model. Report
-on the validity of your model.
+report on the accuracy of your analytical rooflines. Provide an overview of the
+hardware which you are modelling. Then determine, by hand, the arithmetic
+intensity of the application and establish the upper bound on the performance
+of the application. Explain what other methods could be used to find the
+arithmetic intensity of the application. Integrate the hardware and application
+models into a single roofline model. Find the true performance of the
+application for at least five matrices and compare them to your model. Explain
+whether or not the input data affects the arithmetic intensity of your
+application. Report on the validity of your model.
 
-== Part 2 -- Sequential Optimisation (4 points)
+== Part 2 -- Sequential Optimisation (3 points)
 
 Improve the performance of the reference matrix multiplication program through
 model-guided optimisation. Consider techniques to improve the memory behavior
 (e.g., consider improving the cache friendliness of the code) and the
 computational efficiency (e.g., consider making use of SIMD or certain compiler
 pragmas and flags) of the application. Apply at least two separate
-optimisations. For each optimisation, make a prediction of its effect on the
-roofline model, then measure the performance of the improved versions of the
-application. Compare these results to the reference implementation. Incorporate
-your findings in your models.
+optimisations. Explain how these opimisations follow from your roofline model.
+For each optimisation, make a prediction of its effect on the roofline model,
+then measure the performance of the improved versions of the application.
+Compare these results to the reference implementation. Incorporate your
+findings in your models.
 
-== Part 3 -- Parallel Matrix Multiplication (4 points)
+== Part 3 -- Parallel Matrix Multiplication (3 points)
 
 Build a simple model to determine an upper bound on the performance of a
 task-parallel matrix multiplication application. Parallelise the matrix
@@ -106,4 +116,12 @@ multiplication kernel on both a CPU (we recommend using OpenMP) and on a GPU
 (we recommend using CUDA, as it is well supported on the DAS-5 machines). Build
 a roofline model for each implementation and, using it as an indicator, improve
 the performance further (if possible) or explain why that is no longer
-feasible.
+feasible. Does parallelisation impact the arithmetic intensity of your
+application? Validate your model.
+
+== Part 4 -- Reflection (2 points)
+
+Reflect on your use of the roofline model. What challenges did you face while
+using it? What are the uses and limitations of this model? What are your
+findings on the validity, accuracy, and interpretability of the models you have
+created? Elaborate.
