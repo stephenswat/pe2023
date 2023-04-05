@@ -182,7 +182,7 @@
   - Please *do not* use the head nodes for computation: only compilation
   - Keep in mind DAS-5 is shared with your fellow PE students and other people
     doing research
-  - Usually busy just before deadlines, keep that in mind #emoji.face.wink
+  - Usually busy just before deadlines, keep that in mind
 ]
 
 #slide[
