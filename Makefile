@@ -1,6 +1,8 @@
 TYPST ?= typst
 
-all: laptopcollege_intro.pdf assignment1.pdf assignment1.tar.gz
+PDFS =
+
+all: laptopcollege_intro.pdf project_intro.pdf assignment1.pdf assignment1.tar.gz
 
 commit.txt:
 	git describe --always --dirty="*" > $@
