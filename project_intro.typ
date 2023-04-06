@@ -54,6 +54,7 @@
 
   - Besides the exam and assignments, the project is the final component of
     your grade
+  - We will kick off the project today
 ]
 
 #slide[
@@ -62,12 +63,19 @@
   - You will spend eight weeks on a project of _your choice_
   - The project is free-form and relatively hands-off
     - Of course, we are still here to help!
+  - Same groups as assignments (barring good reasons)
 ]
 
 #slide[
   = Requirements
 
-  - You will spend eight weeks on a project of _your choice_
+  - You are required to apply as many of the methods taught in this course as
+    you see fit
+  - Please incorporate at least one form of parallelism:
+    - Instruction-level
+    - Data-level
+    - Task-level
+    - Node-level
 ]
 
 #slide[
@@ -94,7 +102,10 @@
 #slide[
   = Schedule
 
-  - 
+  - Kick-off: April 6, 2023 (today)
+  - Project proposals: April 12, 2023
+  - Mid-term presentations: May 11, 2023
+  - Final presentations: June 2, 2023
 ]
 
 #slide[
