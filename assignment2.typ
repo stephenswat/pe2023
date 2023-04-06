@@ -14,7 +14,7 @@
 #set page(
   margin: 7em,
   header: align(right)[
-      Performance Engineering 2023 -- Assignment 1
+      Performance Engineering 2023 -- Assignment 2
   ]
 )
 
