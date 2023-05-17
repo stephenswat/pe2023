@@ -45,8 +45,8 @@
 = Assignment 3 -- Data-centric and Statistical Modelling
 
 The goal of this assignment is to familiarise yourself with the concepts of
-data-centric and statistical, in which we sacrifice descriptive power for
-predictive power. Such models include a wide variety of machine learning
+data-centric and statistical modelling, in which we sacrifice descriptive power
+for predictive power. Such models include a wide variety of machine learning
 methods.
 
 #note[
